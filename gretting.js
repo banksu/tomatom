@@ -25,13 +25,12 @@ function askForName() {
 
 function paintGreeting(text) {
   //화면에 text를 나타냄
-  form.classList.remove(SHOWING_CN); //form을 지우고
-  greeting.classList.add(SHOWING_CN); //greeting을 보여주고
-  greeting.innerText = `Hello ${text}`; //text를 넣음
+  form.classList.remove(SHOWING_CN);
+  greeting.classList.add(SHOWING_CN);
+  greeting.innerText = `You feel good Ya, ${text}!`;
 }
 
 function loadName() {
-  //이름 불러오기
   const currentUser = localStorage.getItem(USER_LS);
   if (currentUser === null) {
     askForName();

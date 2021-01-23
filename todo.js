@@ -28,7 +28,7 @@ function panintToDo(text) {
   const newID = toDos.length + 1;
   delBtn.innerText = "❌";
   delBtn.addEventListener("click", deleteToDo);
-  span.innerText = text;
+  span.innerText = text + " ";
   li.appendChild(span);
   li.appendChild(delBtn);
   toDoList.appendChild(li);
